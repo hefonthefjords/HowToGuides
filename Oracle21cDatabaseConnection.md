@@ -9,21 +9,21 @@ To solve this problem, we instead configure the database to reference your compu
 
 1. Press the Windows key + X, then select "System" from the popup menu.<br><br>
 
-!{Windows key + X](URL)<br><br>
+![Windows key + X](https://github.com/hefonthefjords/HowToGuides/blob/main/images/winx.png)<br><br>
 
 2. Note (highlight, and ctrl + c) the "Device Name" noted in the "Device specifications" section.
 
-![Device Name](URL)<br><br>
+![Device Name](https://github.com/hefonthefjords/HowToGuides/blob/main/images/devname.png)<br><br>
 
 3. Open a Windows Explorer window and navigate to the folder "C:\app\*{your windows login name}*\product\21c\homes\OraDB21Home1\network\admin"
 
-![Folder](URL)
+![Folder](https://github.com/hefonthefjords/HowToGuides/blob/main/images/folder.png)
 
 4. Open the "listener.ora" file using Notepad (right-click > open with) to edit it.<br><br>
 
 5: Under the "LISTENER" key, change the "HOST" value to the Device Name you copied in step 2, as highlighted blue in the image below.
 
-![Listener.ora](URL)
+![Listener.ora](https://github.com/hefonthefjords/HowToGuides/blob/main/images/listener.png)
 
 Then save the file and close notepad.
 
@@ -32,7 +32,7 @@ Then save the file and close notepad.
 7. Under the "XE" key, again change the "HOST" entry to the device name copied in step 2. <br>
 Then, under the "LISTENER_XE" key, also change the "HOST" entry to the Device Name copied in step 2, as highlighted blue in the image below.<BR><BR>
 
-![Tnsnames.ora}(URL)
+![Tnsnames.ora](https://github.com/hefonthefjords/HowToGuides/blob/main/images/tnsnames.png)
 
 Then save and close the file.
 
@@ -40,7 +40,7 @@ Then save and close the file.
 
 9. You should now be able to connect to your database using the details shown below, using the password you set at installation.
 
-![Connect](URL)
+![Connect](https://github.com/hefonthefjords/HowToGuides/blob/main/images/connect.png)
 
 
 Cheers pal. :)
